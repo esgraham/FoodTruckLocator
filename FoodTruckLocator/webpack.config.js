@@ -10,15 +10,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new Dotenv()
- ]
-};
-
-module.exports = {
-  plugins: [
+    new Dotenv(),
     new CopyPlugin([
       { from: path.resolve(__dirname, 'images'), to: path.resolve(__dirname, 'dist/images') },
       { from: path.resolve(__dirname, 'css'), to: path.resolve(__dirname, 'dist/css') }
-    ]),
-  ],
+    ])
+ ]
 };
+

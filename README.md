@@ -2,6 +2,8 @@
 
 This project uses an excel file from San Francisco's Data Source to fetch all food truck locations around the city.  The project uses Azure Maps to plot trucks on a map and determines the distance to the truck from the center of the city.
 
+The finished product can be found here:  <https://foodtrucklocator.azurewebsites.net>
+
 ## Architecture ##
 
 The project is a web application that connects to Azure Maps to render a map display with a search box.  The web application uses Azure Maps SDK to make calls to the service.  The application has been deployed to an Azure Web App and uses Azure DevOps for continuous deployment.

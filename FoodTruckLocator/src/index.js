@@ -1,6 +1,6 @@
-﻿//var dataHelper = require('./parseTruckData.js');
+﻿var dataHelper = require('./parseTruckData.js');
 
-var key = '';
+var key = process.env.AzureMapsKey;
 
 
 //The maximum zoom level to cluster data point data on the map.
@@ -136,7 +136,7 @@ function initialize() {
 
 async function loadTruckData() {
 
-    var features = await parseTruckData(truckLocationDataUrl);
+    var features = await dataHelper.parseTruckData(truckLocationDataUrl);
     
     //Add the features to the data source.
     datasource.add(features);

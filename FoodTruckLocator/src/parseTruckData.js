@@ -1,9 +1,9 @@
 //Parse the excel file into a geoJSON format (https://docs.microsoft.com/en-us/azure/azure-maps/extend-geojson)
 //To Do:  Convert to an Azure Function for reusability
 
-//module.exports={
-   //  parseTruckData: async function(truckLocationDataUrl) {
-   async function parseTruckData(truckLocationDataUrl){
+module.exports={
+   parseTruckData: async function(truckLocationDataUrl) {
+   //async function parseTruckData(truckLocationDataUrl){
     //Get the truck location data.
     let response = await fetch(truckLocationDataUrl);
     let text = await response.text();
@@ -52,7 +52,7 @@
     }
     return features;
 }
-//}
+}
 
 function csvToArray(text) {
     let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, l;

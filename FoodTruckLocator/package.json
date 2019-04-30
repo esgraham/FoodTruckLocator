@@ -15,12 +15,13 @@
   "license": "ISC",
   "devDependencies": {
     "env-cmd": "^7.0.0",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.1",
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "cross-env": "^5.2.0",
     "env-cmd": "^7.0.0",
-    "cross-env": "^5.2.0"
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.1"
   }
 }

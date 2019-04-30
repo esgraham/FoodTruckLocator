@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>San Francisco Food Truck Locator</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="A simple search and map of the San Francisco food trucks" />
+    <meta name="keywords" content="map, gis, food truck, locator, san francisco" />
+    <meta name="author" content="Elizabeth Graham" />
+
+    <!-- Add references to the Azure Maps Map control JavaScript and CSS files. -->
+    <link rel="stylesheet" href="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.css" type="text/css" />
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas.min.js"></script>
+
+    <!-- Add a reference to the Azure Maps Services Module JavaScript file. -->
+    <script src="https://atlas.microsoft.com/sdk/javascript/mapcontrol/2/atlas-service.min.js"></script>
+
+    <!-- Add references to the store locator JavaScript and CSS files. -->
+    <link rel="stylesheet" href="../css/index.css" type="text/css" />
+    <script src="../src/index.js"></script>
+    <script src="../src/parseTruckData.js"></script>
+ 
+ 
+
+    <header>
+        <img src="../images/Logo.png" />
+        <span>San Francisco Food Trucks</span>
+    </header>
+    <main>
+
+        <div class="searchPanel">
+            <div>
+                <input id="searchTbx" type="search" placeholder="Find a store" />
+                <button id="searchBtn" title="Search"></button>
+            </div>
+        </div>
+
+        <div id="listPanel"></div>
+
+        <div id="myMap"></div>
+
+        <button id="myLocationBtn" title="My Location"></button>
+    </main>
+</body>
+</html>

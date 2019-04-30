@@ -5,7 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
+    "build:prod": "webpack --config webpack.config.js ",
+    "build:dev": "webpack --config webpack.dev.js",
     "start": "env-cmd .env if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:dev": "env-cmd .env cross-env NODE_ENV=development webpack-dev-server --config=webpack.dev.config.js",
     "start:prod": "env-cmd .env cross-env NODE_ENV=production node server"

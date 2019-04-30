@@ -362,7 +362,7 @@ function getAddressLine(properties) {
     html.push('<br />')
 
     if (properties['City']) {
-        html.push(', ', properties['City']);
+        html.push(properties['City']);
     }
 
     if (properties['AdminDivision']) {
